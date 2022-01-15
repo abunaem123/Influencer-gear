@@ -1,7 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    /* padding: 0px; */
 }
 section{
     padding: 50px 120px;
@@ -16,8 +15,34 @@ h1{
     text-transform: uppercase;
 }
 /* Header Style Start  */
-/* Mobile Header Hide start */
 
+/* Mobile Header Hide start */
+.mobile-logo{display: none;}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon i{
+    font-size: 25px;
+    margin-right: 10px;
+}
 /* Mobile Header Hide end  */
 
 /* slider styles  */
@@ -240,8 +265,17 @@ Mobile Responsive
 -----------------------*/
 @media only screen and (max-width: 688px) {
     /* Header Styles start */
-    
+    .mobile-logo{
+        display: block;
+    }
+    .mobile-logo h1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
 
+    .desktop{
+        display: none;
+    }
 
 /* Header Section End      */
     section{
@@ -260,12 +294,14 @@ Mobile Responsive
     }
     
     .half-width h1{
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
     }
     .half-width p{
         font-size: 16px;
         text-align: center;
+        padding: 0px 10px;
+        margin-bottom: 20px;
     }
     
     .hero-img{
@@ -309,11 +345,7 @@ Mobile Responsive
         font-size: 18px;
         margin-bottom: 40px;
     }
-    /* .seemore{
-        float: right;
-        padding-bottom: 0px;
-        margin-top: 0px; 
-    } */
+    
     /* Gallery Style  */
     .gallery{
         display: grid;
@@ -332,6 +364,24 @@ Mobile Responsive
 }
 /* Tab Responsive  */
 @media only screen and (min-width:688px) and (max-width:992px) {
+    .mobile-logo{
+        display: none;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0px;
+        width: 100%;
+    }
+    nav a{
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+        margin-right: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
     section{
         padding: 10px;
     }
@@ -360,9 +410,7 @@ Mobile Responsive
 .sponsor{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
     margin: 0px 20px;
-  
 }
 
 /* product setion styles start  */

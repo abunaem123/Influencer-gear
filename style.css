@@ -64,7 +64,16 @@ h1{
      display: flex;
      justify-content: space-around;
  }
- /* Product Styles  */
+
+ /* --------------------
+ Product Styles 
+ -------------------- */
+
+ .head-tittle{
+     text-align: center;
+     font-size: 40px;
+     margin-bottom: 30px;
+ }
  .third-sec{
      padding-bottom: 100px;
  }
@@ -75,7 +84,6 @@ h1{
     grid-row-gap: 20px;
  }
  .product{
-     /* margin: 15px; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: white;
     padding: 15px;
@@ -128,6 +136,43 @@ h1{
     font: 18px;
 }
 /* Product Style End  */
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 100px;
+}
+.half-wid img{
+    max-width: 100%;
+}
+.half-widt:hover img{
+    transform: scale(1.2);
+    transition: transform 2s;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    align-items: center;
+}
+.about h1{
+    font-size: 40px;
+}
+.about p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.about a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+.half-widt img{
+    width: 100%;
+}
 /* Gallery section  */
 .galleres{
     padding: 0px;
@@ -149,7 +194,9 @@ h1{
 .gallery-photo img{
     width: 100%;
 }
-/* Gallery Style End  */
+/* --------------------
+Gallery Style End 
+---------------------- */
 
 
 footer{
@@ -205,6 +252,13 @@ Mobile Responsive
         grid-template-columns: repeat(1,1fr);
         width: 100%;
     }
+    .head-tittle{
+        font-size: 25px;
+        text-align: center;
+        padding: 30px 0px;
+        text-transform: uppercase;
+    }
+    
     .half-width h1{
         font-size: 35px;
         text-align: center;
@@ -239,11 +293,27 @@ Mobile Responsive
         grid-template-columns: repeat(1,1fr);
         width: 100%;
     }
-    .seemore{
+    .about{
+        padding-bottom: 60px;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 80px;
+        align-items: center;
+    }
+    .about h1{
+        font-size: 30pxpx;
+    }
+    .about p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    /* .seemore{
         float: right;
         padding-bottom: 0px;
         margin-top: 0px; 
-    }
+    } */
     /* Gallery Style  */
     .gallery{
         display: grid;
@@ -300,6 +370,15 @@ Mobile Responsive
         display: grid;
         grid-template-columns: repeat(2,1fr);
         width: 100%;
+    }
+    .about{
+        padding-bottom: 60px;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 80px;
+        align-items: center;
     }
     
     /* Gallery Style  */
